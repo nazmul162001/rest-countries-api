@@ -13,11 +13,14 @@ const displayCountries = countries => {
 }
 
 const getCountryHTML = country => {
+  // option 1 - distructuring
+  const {name, flags, capital} = country;
+
   return `
     <div class = "country">
-    <h2>Country: ${country.name.common}</h2>
-    <h2>Capital: ${country.capital}</h2>
-    <img src = "${country.flags.png}">
+    <h2>Country: ${name.common}</h2>
+    <h2>Capital: ${capital}</h2>
+    <img src = "${flags.png}">
     </div>
   `
 }
