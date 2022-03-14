@@ -15,7 +15,8 @@ const displayCountries = countries => {
 const getCountryHTML = country => {
   return `
     <div class = "country">
-    <h2>${country.name.common}</h2>
+    <h2>Country: ${country.name.common}</h2>
+    <h2>Capital: ${country.capital}</h2>
     <img src = "${country.flags.png}">
     </div>
   `
